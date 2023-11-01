@@ -7,6 +7,13 @@
 
     //Entrada
 
+    function conversao(valorConvertido) {
+        valorConvertido = (9 * valorConvertido + 160) / 5;
+        return valorConvertido;
+    }
+    let temperatura= Number(prompt('Digite o valor em graus celsius: ').replace(',', '.'));
+    let mensagem = 'O valor convertido para fahrenheit é ' + conversao(temperatura) + '°F';
+    alert(mensagem);
 
     //Processamento
 
