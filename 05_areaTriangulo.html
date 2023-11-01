@@ -1,3 +1,4 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <script>
     /*
     Problema: Área do Triângulo
@@ -6,8 +7,13 @@
     */
 
     //Entrada
-
-
+    function calcularAreaTriangulo() {
+        let altura = Number(prompt("Digite o valor da altura").replace("," , "."));
+        let base = Number(prompt("Digite o valor da base").replace(",", '.'));
+        const area = ((base * altura) / 2).toFixed(2);
+        alert(`A área é ${area.replace('.', ',')}m`);
+    }
+    calcularAreaTriangulo();
     //Processamento
 
 
