@@ -8,10 +8,27 @@
 
     //Entrada
     function contarVogais(vogal) {
-        vogal = 
-    }
+        let i = 0;
+        let contador = 0
+        for (n of vogal.slice(i)){
+             if (n ==  "A" || n == "E" || n == "I" || n == "O" || n == "U") {
+                contador++;
+             } 
+             i++;
+        }
+        if (contador >= 1) alert(`Há ${contador} vogal(is) na palavra`);
+        else alert("Não há vogais nas palavras");
+        return vogal;
+        
 
-    const palavra = Number(prompt("Digite uma palavra: "));
+    }
+    let palavra = prompt("Digite uma palavra: ");
+    palavra = palavra.toUpperCase();
+    contarVogais(palavra);
+
+    
+
+   
 
 
     //Processamento
