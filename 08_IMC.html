@@ -7,7 +7,16 @@
 
     //Entrada
 
+    function CalcularIMC(peso, altura) {
+        const imc = peso / (altura * altura);
+        return imc;
+    }
+    const peso = Number(prompt("Digite a sua massa corporal em kg: ").replace(",", "."));
+    const altura = Number(prompt("Digite a sua altura em metros: ").replace(",", "."));
 
+    const imc = CalcularIMC(peso, altura);
+    alert(`O seu imc é ${(imc.toFixed(2))}`)
+    
     //Processamento
 
 
