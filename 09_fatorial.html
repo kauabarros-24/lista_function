@@ -1,3 +1,4 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <script>
     /*
     Problema: Calcular Fatorial
@@ -5,6 +6,24 @@
     */
 
     //Entrada
+
+    function calcularFatorial(numero) {
+        if (numero === 0 || numero === 1) return 1;
+        else return numero * calcularFatorial(numero - 1);
+        
+    }
+    const numero = Number(prompt("Informe um número inteiro:"));
+    const fatorial = calcularFatorial(numero);
+    alert(`O fatorial de ${numero} é ${fatorial}`);
+
+
+
+
+
+
+
+
+
 
 
     //Processamento
