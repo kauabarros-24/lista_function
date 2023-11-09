@@ -5,6 +5,32 @@
     */
 
     //Entrada
+    function isPrimo(numero) {
+        if (numero <= 1) {
+            return false;
+        }
+
+        // Verificar divisibilidade a partir de 2 até a raiz quadrada do número
+        for (let i = 2; i <= Math.sqrt(numero); i++) {
+            if (numero % i === 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    // Solicitar um número ao usuário
+    const numero = parseInt(prompt("Informe um número:"));
+
+        if (isPrimo(numero)) {
+            console.log(`${numero} é um número primo.`);
+        } 
+        else {
+            console.log(`${numero} não é um número primo.`);
+        }
+    
+
 
 
     //Processamento
