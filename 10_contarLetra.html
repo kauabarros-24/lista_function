@@ -20,7 +20,7 @@
     const frase = prompt("Informe uma frase ou palavra: ");
     const letra = prompt("Informe uma letra para contar: ");
 
-    if (frase && letra && letra.length === 1) {
+    if (frase == 1 && letra == 1 && letra.length == 1) {
         const quantidade = contarLetraNaFrase(frase, letra);
         alert(`A letra "${letra}" aparece ${quantidade} vez(es) na frase "${frase}".`);
     }
