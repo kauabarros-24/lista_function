@@ -8,24 +8,20 @@
     P = 2 * π * r
     */
 
-    //Entrada
-    function CalcularPerimetro(raio) {
-        raio = raio * 2 * 3.14;
-        return raio;
-    }
-    function CalcularArea(raio) {
-        raio = (raio * raio) * 3.14
-        return raio;
-    }
-    const formulaUsada = prompt('Digite qual fórmula deseja usar: ').toUpperCase();
-    const valorRaio = Number(prompt("Digite o valor do raio em metros: ").replace(",", "."));
+    function CalcularArea(valorRaio) {
+        valorRaio = (valorRaio * valorRaio) * 3.14;
+        return valorRaio;
 
-    if (formulaUsada == 'PERÍMETRO' || formulaUsada == 'PERIMETRO' || formulaUsada == "P") {
-        alert(`O perímetro é ${CalcularPerimetro(valorRaio)}m`);
     }
-    else {
-        alert(`A área é ${CalcularArea(valorRaio.toFixed(1))}m`); 
+    function CalcularPerimetro(valorRaio) {
+        valorRaio = 2 * valorRaio * 3.14;
+        return valorRaio;
     }
+    //Entrada
+    const formula = prompt('Digite se deseja calcular a área ou o perímetro: ').trim().toUpperCase();
+    const raio = Number(prompt('Digite o valor do raio').replace(',', '.'));
+    
+
 
  
 
